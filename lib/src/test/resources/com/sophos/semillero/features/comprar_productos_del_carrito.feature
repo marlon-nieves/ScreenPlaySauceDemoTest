@@ -2,14 +2,14 @@
 Feature: Comprar productos del carrito
 
   Background: 
-    Given "jeffer" ingreso a la pagina principal
+    Given "marlon" ingreso a la pagina principal
     When diligencio el formulario de login
       | user | standard_user |
       | pass | secret_sauce  |
     Then le redirecciono a la pagina de inventario
 
   Scenario: Comprar productos del carrito de manera exitosa
-    Given "Jeffer" tiene productos agregados al carrito
+    Given "Marlon" tiene productos agregados al carrito
       | Sauce Labs Backpack      |
       | Sauce Labs Fleece Jacket |
     When hizo un checkout de los productos
